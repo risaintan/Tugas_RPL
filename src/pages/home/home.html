@@ -1,13 +1,17 @@
-<ion-list>
-
-  <ion-item>
-    <ion-input type="text" placeholder="Username"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input type="password" placeholder="Password"></ion-input>
-  </ion-item>
-
-  <button ion-button block>Login</button>
-
-</ion-list>
+<ion-content padding center text-center>
+  <ion-title>Ah Laparrrr</ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" floating>Username</ion-label>
+      <ion-input [(ngModel)]="username"> </ion-input>
+    </ion-item>
+  
+    <ion-item>
+       <ion-label color="primary" floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  
+    <button ion-button full (click)="login()" >Log in</button>
+    <button ion-button full color="light" (click)="goRegister()" >Register</button>
+  </ion-list>
+</ion-content>

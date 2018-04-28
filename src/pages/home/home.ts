@@ -7,8 +7,20 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  username:string;
+  password:string;
+
   constructor(public navCtrl: NavController) {
 
+  }
+
+  login() {
+    console.log("username: "+ this.username);
+
+    console.log("Password: "+ this.password);  }
+
+  goRegister() {
+    this.navCtrl.push(RegisterPage);
   }
 
 }
