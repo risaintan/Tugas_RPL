@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { RegisterPage } from '../register/register';
 
 @Component({
   selector: 'page-home',
@@ -9,7 +10,6 @@ export class HomePage {
 
   username:string;
   password:string;
-
   constructor(public navCtrl: NavController) {
 
   }
@@ -19,8 +19,8 @@ export class HomePage {
 
     console.log("Password: "+ this.password);  }
 
-  goRegister() {
-    this.navCtrl.push(RegisterPage);
+  keRegister() {
+      this.navCtrl.push(RegisterPage);
   }
 
 }
