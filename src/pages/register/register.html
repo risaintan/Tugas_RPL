@@ -1,19 +1,50 @@
-<!--
-  Generated template for the RegisterPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>register</ion-title>
+    <ion-title>Register Pembeli</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content padding center text-center class="background">
+  <h1 style="padding-top: 5vw; padding-bottom: 5vw">
+    <img src="../assets/imgs/mhs.png" style="text-align: center" height="100vw" width="100vw">
+  </h1>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary" floating>Nama Lengkap</ion-label>
+              <ion-input type="text" [(ngModel)]="namalengkap"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label color="primary" floating>E-Mail Adress</ion-label>
+                <ion-input type="text" [(ngModel)]="email"></ion-input>
+              </ion-item>
 
-<ion-content padding>
+        <ion-item>
+          <ion-label color="primary" floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+           <ion-label color="primary" floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary" floating>Re-Password</ion-label>
+         <ion-input type="password" [(ngModel)]="repassword"></ion-input>
+       </ion-item><br>
+  
+        <button ion-button round (click)="onLoadUtamaPage()" >Sign Up</button>
+      </ion-list>
+    </ion-card-content>
+    </ion-card>
+</ion-content>
+
+<!-- <ion-content padding>
   <ion-list>
     <ion-item>
       <ion-label color="primary" floating>Username</ion-label>
@@ -32,4 +63,4 @@
    <button ion-button full (click)="onLoadUtamaPage()" >Sign Up</button>
 
   </ion-list>
-</ion-content>
+</ion-content> -->

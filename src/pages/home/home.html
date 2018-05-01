@@ -1,7 +1,6 @@
 <ion-content padding center text-center class="background">
-  <ion-title>Ah Laparrrr</ion-title>
+  <ion-title><h1 style="font-size: 1cm; padding-top: 10vw">Ah Laparrrr!</h1></ion-title>
   <ion-card>
-    <ion-card-header>LOGIN</ion-card-header>
     <ion-card-content>
       <ion-list>
         <ion-item>
@@ -18,13 +17,17 @@
           <p>Lupa password?<a> Klik di sini.</a></p>
         </ion-item>
   
-        <button ion-button round (click)="onLoadutamaPage()" >LOGIN</button>
+        <button ion-button full round (click)="onLoadutamaPage()" >LOGIN</button>
       </ion-list>
 
     </ion-card-content>
-  </ion-card>
-   <br><br><br>
-   <b>Belum punya akun? Yuk, daftar!</b>
-   <br><br>
-   <button ion-button color="light" round (click)="onLoadpilihan()">Register</button>
+    </ion-card>
 </ion-content>
+<ion-footer style="text-align: center;">
+    <ion-toolbar>
+        <h1 style="text-align: center; font-size: 0.5cm">BELUM   PUNYA   AKUN?</h1>
+        <p>YUK, DAFTAR!</p>
+        <button ion-button round (click)="onLoadPenjualPage()" >Penjual</button>
+        <button ion-button round (click)="onLoadRegisterPage()">Pembeli</button>
+    </ion-toolbar>
+  </ion-footer>

@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { UtamaPage } from '../utama/utama';
 import { PilihanPage } from '../pilihan/pilihan';
+import { PenjualPage } from '../penjual/penjual';
 
 @Component({
   selector: 'page-home',
@@ -20,6 +21,14 @@ export class HomePage {
     console.log("username: "+ this.username);
 
     console.log("Password: "+ this.password);  }
+
+    onLoadPenjualPage(){
+      this.navCtrl.push(PenjualPage);
+    }
+  
+    onLoadRegisterPage(){
+      this.navCtrl.push(RegisterPage);
+     }
 
   onLoadutamaPage(){
     this.navCtrl.push(UtamaPage);
