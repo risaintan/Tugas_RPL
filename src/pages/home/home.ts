@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
+import { UtamaPage } from '../utama/utama';
+import { PilihanPage } from '../pilihan/pilihan';
 
 @Component({
   selector: 'page-home',
@@ -19,8 +21,11 @@ export class HomePage {
 
     console.log("Password: "+ this.password);  }
 
-  keRegister() {
-      this.navCtrl.push(RegisterPage);
+  onLoadutamaPage(){
+    this.navCtrl.push(UtamaPage);
   }
 
+  onLoadpilihan(){
+    this.navCtrl.push(PilihanPage);
+    }
 }
