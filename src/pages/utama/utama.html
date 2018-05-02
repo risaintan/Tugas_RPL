@@ -8,11 +8,46 @@
 
   <ion-navbar>
     <ion-title>Utama</ion-title>
+    <ion-buttons right>
+        <button (click)="onLoadprofilePage()" ion-button>
+          <ion-icon style="font-size: 10vw" name="ios-person"></ion-icon>
+        </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="card-background-page">
 
-</ion-content>
+    <ion-buttons right>
+        <button (click)="onLoadtempat1Page()">
+            <ion-card>
+                <img src="/assets/imgs/sapta.jpeg"/>
+                <div class="card-title">Sapta</div>
+                <div class="card-subtitle">41 Listings</div>
+              </ion-card>
+        </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+        <button (click)="onLoadtempat2Page()">
+            <ion-card>
+                <img src="/assets/imgs/stevia.jpeg"/>
+                <div class="card-title">Stevia</div>
+                <div class="card-subtitle">64 Listings</div>
+              </ion-card>
+        </button>
+    </ion-buttons>
+    
+    <ion-buttons right>
+        <button (click)="onLoadtempat3Page()">
+            <ion-card>
+                <img src="/assets/imgs/bara.jpeg"/>
+                <div class="card-title">Bara</div>
+                <div class="card-subtitle">72 Listings</div>
+              </ion-card>
+        </button>
+    </ion-buttons>
+
+  </ion-content>
