@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Utama</ion-title>
+    <ion-title>IPB</ion-title>
     <ion-buttons right>
         <button (click)="onLoadprofilePage()" ion-button>
           <ion-icon style="font-size: 10vw" name="ios-person"></ion-icon>
@@ -19,6 +19,16 @@
 
 
 <ion-content class="card-background-page">
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-card>
+        <ion-card-content>
+    
+            <ion-item>
+              <h2>Hai</h2>
+              <p>Mau makan apa hari ini?</p>
+            </ion-item>
+    </ion-card-content>
+        </ion-card>
 
     <ion-buttons right>
         <button (click)="onLoadtempat1Page()">
