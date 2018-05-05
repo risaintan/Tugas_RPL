@@ -7,13 +7,49 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>formpenjual</ion-title>
+    <ion-title>Form Penjual</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content padding center text-center class="background">
+    <h1 style="padding-top: 5vw; padding-bottom: 5vw">
+        <img src="../assets/imgs/pic.jpg" style="text-align: center" height="150vw" width="150vw"> 
+      </h1>
+    <ion-card>
+    <ion-card-content>
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary" floating>Nama Toko</ion-label>
+              <ion-input type="text" [(ngModel)]="namatoko"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label color="primary" floating>Kontak</ion-label>
+                <ion-input type="text" [(ngModel)]="kontak"></ion-input>
+              </ion-item>
 
-<ion-content padding>
-    <button ion-button round (click)="onLoadProfpenjualPage()" >Lanjut</button>
+        <ion-item>
+           <ion-label color="primary" floating>Alamat Toko</ion-label>
+          <ion-input type="text" [(ngModel)]="alamattoko"></ion-input>
+        </ion-item>
 
+        <ion-item>
+          <ion-label color="primary" floating>Status</ion-label>
+         <ion-input type="text" [(ngModel)]="status"></ion-input>
+       </ion-item>
+       
+       <ion-item >
+        <ion-label color="primary" floating >Menu</ion-label>
+       <ion-input id="menu" type="text" [(ngModel)]="menu"></ion-input>
+       </ion-item>
+       <br>
+  
+       </ion-list>
+    </ion-card-content>
+    
+    <button ion-button round (click)="onLoadProfpenjualPage()" >SIGN UP</button>
+    </ion-card>
+    
 </ion-content>
+

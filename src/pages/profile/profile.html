@@ -15,5 +15,24 @@
 
 
 <ion-content padding>
-
+    <div padding>
+        <ion-segment [(ngModel)]="option">
+          <ion-segment-button value="favorite">
+            Favorites
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="option">
+        <ion-list *ngSwitchCase="'favorite'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="/assets/imgs/soto.jpg">
+            </ion-thumbnail>
+            <h2>Soto</h2>
+          </ion-item>
+        </ion-list>
+      
+        
+      </div>
 </ion-content>
