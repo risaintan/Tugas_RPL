@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { UtamaPage } from '../utama/utama';
 import { PilihanPage } from '../pilihan/pilihan';
+import { FormpenjualPage } from '../formpenjual/formpenjual';
 
 /**
  * Generated class for the PenjualPage page.
@@ -20,8 +21,8 @@ export class PenjualPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  onLoadPilihanPage(){
-    this.navCtrl.push(PilihanPage);
+  onLoadFormpenjualPage(){
+    this.navCtrl.push(FormpenjualPage);
   }
 
   

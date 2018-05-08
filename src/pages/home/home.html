@@ -1,13 +1,12 @@
 <ion-content padding center text-center class="background">
-  <ion-title><h1 style="font-size: 1cm; padding-top: 20vw">Ah Laparrrr!</h1></ion-title>
+  <ion-title><h1 style="font-size: 1cm; padding-top: 20vw">Eh Laparrrr!</h1></ion-title>
   <ion-card>
     <ion-card-content>
       <ion-list>
         <ion-item>
           <ion-label color="primary" floating>Username</ion-label>
-          <ion-input type="text" [(ngModel)]="username"></ion-input>
+          <ion-input type="text" [(ngModel)]="username" ></ion-input>
         </ion-item>
-
         <ion-item>
            <ion-label color="primary" floating>Password</ion-label>
           <ion-input type="password" [(ngModel)]="password"></ion-input>
@@ -19,7 +18,6 @@
   
         <button ion-button full round (click)="onLoadutamaPage()" >LOGIN</button>
       </ion-list>
-
     </ion-card-content>
     </ion-card>
 </ion-content>

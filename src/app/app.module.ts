@@ -11,6 +11,11 @@ import { UtamaPage } from '../pages/utama/utama';
 import { PenjualPage } from '../pages/penjual/penjual';
 import { PilihanPage } from '../pages/pilihan/pilihan';
 import { ProfilePage } from '../pages/profile/profile';
+import { Tempat1Page } from '../pages/tempat1/tempat1';
+import { FormpenjualPage } from '../pages/formpenjual/formpenjual';
+import { ProfpenjualPage } from '../pages/profpenjual/profpenjual';
+import { Tempat3Page } from '../pages/tempat3/tempat3';
+import { Tempat2Page } from '../pages/tempat2/tempat2';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { ProfilePage } from '../pages/profile/profile';
     UtamaPage,
     PenjualPage,
     PilihanPage,
-    ProfilePage
+    ProfilePage,
+    Tempat1Page,
+    FormpenjualPage,
+    ProfpenjualPage,
+    Tempat2Page,
+    Tempat3Page
   ],
   imports: [
     BrowserModule,
@@ -34,7 +44,12 @@ import { ProfilePage } from '../pages/profile/profile';
     UtamaPage,
     PenjualPage,
     PilihanPage,
-    ProfilePage
+    ProfilePage,
+    Tempat1Page,
+    FormpenjualPage,
+    ProfpenjualPage,
+    Tempat2Page,
+    Tempat3Page
   ],
   providers: [
     StatusBar,
