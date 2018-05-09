@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>tempat2</ion-title>
+    <ion-title>Stevia</ion-title>
   </ion-navbar>
   <ion-toolbar>
       <ion-searchbar (input)="getItems($event)"></ion-searchbar>
@@ -17,5 +17,68 @@
 
 
 <ion-content padding>
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <img src="../assets/imgs/stevia.jpeg" style="text-align: center" > 
+    
+    <div padding>
+       <ion-segment [(ngModel)]="pilihan">
+         <ion-segment-button value="menu">
+           Menu
+         </ion-segment-button>
+         <ion-segment-button value="ulasan">
+             Ulasan
+           </ion-segment-button>
+       </ion-segment>
+     </div>
+     
+     <div [ngSwitch]="pilihan">
+       <ion-list *ngSwitchCase="'menu'">
+         <ion-item>
+             <ion-thumbnail item-start>
+                 <img src="/assets/imgs/banana.jpg">
+             </ion-thumbnail>
+           <h2><b>Banana Milk</b></h2>
+           <p>8.000</p>
+         </ion-item>
+         <ion-item>
+           <ion-thumbnail item-start>
+             <img src="/assets/imgs/ayam.jpg">
+           </ion-thumbnail>
+           <h2><b>Ayam Geprek</b></h2>
+           <p>10.000</p>
+         </ion-item>
+       </ion-list>
+     </div>
+
+     <div [ngSwitch]="pilihan">
+         <ion-list *ngSwitchCase="'ulasan'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <button ion-button icon-only>
+                        <ion-icon name="camera"></ion-icon>
+                      </button>
+                </ion-thumbnail>
+                        <ion-label color="primary" floating>Ulas di sini ....</ion-label>
+                        <ion-input type="text" [(ngModel)]="ulas"></ion-input>
+                        <button ion-button full round (click)="onLoadutamaPage()" >INPUT</button>
+            </ion-item>
+           <ion-item>
+               <ion-thumbnail item-start>
+                  <img src="/assets/imgs/banana.jpg">
+               </ion-thumbnail>
+             <p>Risa Intan Komaraasih</p>
+             <p><i>Banana Milk</i></p>
+             <h2>Enaaaaaaaaaak jugaa!</h2>
+           </ion-item>
+
+           <ion-item>
+              <ion-thumbnail item-start>
+                 
+              </ion-thumbnail>
+            <p>Siapa ni</p>
+            <p><i>Banana Milk</i></p>
+            <h2>Suka jugaa juga!</h2>
+          </ion-item>
+         </ion-list>
+       </div>
 </ion-content>
+
