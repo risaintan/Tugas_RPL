@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { UtamaPage } from '../utama/utama';
 import { PilihanPage } from '../pilihan/pilihan';
@@ -13,10 +13,9 @@ export class HomePage {
 
   username:string;
   password:string;
-  constructor(public navCtrl: NavController,public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
 
   }
-
 
   login() {
     console.log("username: "+ this.username);
@@ -32,7 +31,7 @@ export class HomePage {
      }
 
   onLoadutamaPage(){
-    this.navCtrl.push(UtamaPage);
+    this.navCtrl.setRoot(UtamaPage);
   }
 
   onLoadpilihan(){

@@ -12,7 +12,7 @@ export class RegisterPage {
   }
 
   onLoadUtamaPage(){
-    this.navCtrl.push(UtamaPage);
+    this.navCtrl.setRoot(UtamaPage);
 }
 
 }

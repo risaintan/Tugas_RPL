@@ -7,12 +7,73 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>profpenjual</ion-title>
+    <ion-title>Profil</ion-title>
+    
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <img src="../assets/imgs/sapta.jpeg" style="text-align: center" > 
+    
+    <ion-list>
+        <ion-item>
+          Sapta
+          <button ion-button outline item-end icon-left>
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </ion-item>
+        <ion-item>
+          10:00-03:00
+          <button ion-button outline item-end icon-left>
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </ion-item>
+      </ion-list>
+
+     <div padding>
+        <ion-segment [(ngModel)]="pilihan">
+          <ion-segment-button value="menu">
+            Menu
+          </ion-segment-button>
+          <ion-segment-button value="ulasan">
+              Ulasan
+            </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="pilihan">
+        <ion-list *ngSwitchCase="'menu'">
+          <ion-item>
+              <ion-thumbnail item-start>
+                  <img src="/assets/imgs/soto.jpg">
+              </ion-thumbnail>
+            <h2><b>Soto Ayam</b></h2>
+            <p>13.000</p>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="/assets/imgs/ayam.jpg">
+            </ion-thumbnail>
+            <h2><b>Ayam Geprek</b></h2>
+            <p>10.000</p>
+          </ion-item>
+          <button ion-button small round clear (click)="onLoadutamaPage()" >EDIT</button>
+        </ion-list>
+      </div>
+ 
+      <div [ngSwitch]="pilihan">
+          <ion-list *ngSwitchCase="'ulasan'">
+             <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="/assets/imgs/soto.jpg">
+                </ion-thumbnail>
+              <p>Risa Intan Komaraasih</p>
+              <p><i>Soto Ayam</i></p>
+              <h2>Enaaaaaaaaaak!</h2>
+            </ion-item>
+          </ion-list>
+        </div>
 
 </ion-content>

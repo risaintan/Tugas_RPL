@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProfilePage } from '../profile/profile';
 import { Tempat1Page } from '../tempat1/tempat1';
 import { Tempat2Page } from '../tempat2/tempat2';
 import { Tempat3Page } from '../tempat3/tempat3';
-import { App, MenuController } from 'ionic-angular';
+
 /**
  * Generated class for the UtamaPage page.
  *
@@ -17,8 +17,6 @@ import { App, MenuController } from 'ionic-angular';
   selector: 'page-utama',
   templateUrl: 'utama.html',
 })
-
-
 export class UtamaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

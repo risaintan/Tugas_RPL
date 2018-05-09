@@ -20,7 +20,7 @@ export class FormpenjualPage {
   }
 
   onLoadProfpenjualPage(){
-    this.navCtrl.push(ProfpenjualPage);
+    this.navCtrl.setRoot(ProfpenjualPage);
   }
 
   ionViewDidLoad() {
