@@ -1,0 +1,30 @@
+<ion-content padding center text-center class="background">
+  <ion-title><h1 style="font-size: 1cm; padding-top: 20vw">Eh Laparrrr!</h1></ion-title>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <button ion-button clear round (click)="onLoadutamaPage()">Login sebagai pembeli</button>
+        </ion-item>
+
+        <ion-item>
+          <button ion-button clear round (click)="onLoadutamaPage()">Login sebagai penjual</button>
+        </ion-item>
+
+        <ion-item>
+          <p>Lupa password?<a> Klik di sini.</a></p>
+        </ion-item>
+  
+      </ion-list>
+
+    </ion-card-content>
+    </ion-card>
+</ion-content>
+<ion-footer style="text-align: center;">
+    <ion-toolbar>
+        <h1 style="text-align: center; font-size: 0.5cm">BELUM   PUNYA   AKUN?</h1>
+        <p>YUK, DAFTAR!</p>
+        <button ion-button round (click)="onLoadPenjualPage()" >Penjual</button>
+        <button ion-button round (click)="onLoadRegisterPage()">Pembeli</button>
+    </ion-toolbar>
+  </ion-footer>

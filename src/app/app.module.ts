@@ -16,6 +16,7 @@ import { FormpenjualPage } from '../pages/formpenjual/formpenjual';
 import { ProfpenjualPage } from '../pages/profpenjual/profpenjual';
 import { Tempat3Page } from '../pages/tempat3/tempat3';
 import { Tempat2Page } from '../pages/tempat2/tempat2';
+import { T1toko1Page } from '../pages/t1toko1/t1toko1';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Tempat2Page } from '../pages/tempat2/tempat2';
     FormpenjualPage,
     ProfpenjualPage,
     Tempat2Page,
-    Tempat3Page
+    Tempat3Page,
+    T1toko1Page
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { Tempat2Page } from '../pages/tempat2/tempat2';
     FormpenjualPage,
     ProfpenjualPage,
     Tempat2Page,
-    Tempat3Page
+    Tempat3Page,
+    T1toko1Page
   ],
   providers: [
     StatusBar,
