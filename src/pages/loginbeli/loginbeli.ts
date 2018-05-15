@@ -1,21 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { UtamaPage } from '../utama/utama';
-import { PilihanPage } from '../pilihan/pilihan';
-import { PenjualPage } from '../penjual/penjual';
 import { LoginbeliPage } from '../loginbeli/loginbeli';
+/**
+ * Generated class for the LoginbeliPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
+@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-loginbeli',
+  templateUrl: 'loginbeli.html',
 })
-export class HomePage {
-
+export class LoginbeliPage {
   username:string;
   password:string;
-  constructor(public navCtrl: NavController) {
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   login() {
@@ -23,10 +27,7 @@ export class HomePage {
 
     console.log("Password: "+ this.password);  }
 
-    onLoadPenjualPage(){
-      this.navCtrl.push(PenjualPage);
-    }
-  
+
     onLoadRegisterPage(){
       this.navCtrl.push(RegisterPage);
      }
@@ -35,11 +36,11 @@ export class HomePage {
     this.navCtrl.setRoot(UtamaPage);
   }
 
-  onLoadpilihan(){
-    this.navCtrl.push(PilihanPage);
-    }
 
   onLoadbeliPage(){
     this.navCtrl.push(LoginbeliPage);
   }
+   
 }
+
+
