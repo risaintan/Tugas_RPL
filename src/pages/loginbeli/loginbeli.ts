@@ -1,16 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { UtamaPage } from '../utama/utama';
-import { LoginbeliPage } from '../loginbeli/loginbeli';
-/**
- * Generated class for the LoginbeliPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
-@IonicPage()
 @Component({
   selector: 'page-loginbeli',
   templateUrl: 'loginbeli.html',

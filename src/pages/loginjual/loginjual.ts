@@ -29,5 +29,4 @@ export class LoginjualPage {
   onLoadupenjualPage(){
     this.navCtrl.setRoot(ProfpenjualPage);
   }
-
 }

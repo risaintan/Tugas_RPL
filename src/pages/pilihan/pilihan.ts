@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { PenjualPage } from '../penjual/penjual';
 import { RegisterPage } from '../register/register';
 import { Tempat1Page } from '../tempat1/tempat1';
@@ -10,8 +10,6 @@ import { Tempat1Page } from '../tempat1/tempat1';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
-@IonicPage()
 @Component({
   selector: 'page-pilihan',
   templateUrl: 'pilihan.html',
