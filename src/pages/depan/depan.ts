@@ -5,8 +5,6 @@ import { UtamaPage } from '../utama/utama';
 import { PilihanPage } from '../pilihan/pilihan';
 import { PenjualPage } from '../penjual/penjual';
 import { LoginbeliPage } from '../loginbeli/loginbeli';
-import { FormpenjualPage } from '../formpenjual/formpenjual';
-import { LoginjualPage } from '../loginjual/loginjual';
 
 @Component({
   selector: 'page-home',
@@ -44,12 +42,4 @@ export class HomePage {
   onLoadbeliPage(){
     this.navCtrl.push(LoginbeliPage);
   }
-
-  onLoadFormpenjualPage(){
-    this.navCtrl.push(FormpenjualPage);
-  }
-
-  onLoadjualPage(){
-    this.navCtrl.push(LoginjualPage); }
-
 }
