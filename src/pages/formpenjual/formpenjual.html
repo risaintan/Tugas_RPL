@@ -20,10 +20,19 @@
     <ion-card-content>
       <ion-list>
           <ion-item>
-              <ion-label color="primary" floating>Nama Toko</ion-label>
-              <ion-input type="text" [(ngModel)]="namatoko"></ion-input>
-            </ion-item>
-          
+              <ion-label color="primary" floating>Nama Pemilik</ion-label>
+              <ion-input type="text" [(ngModel)]="nama_owner"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" floating>Email Pemilik</ion-label>
+              <ion-input type="text" [(ngModel)]="email"></ion-input>
+          </ion-item>
+
+            <ion-item>
+                <ion-label color="primary" floating>Nama Toko</ion-label>
+                <ion-input type="text" [(ngModel)]="nama_toko"></ion-input>
+              </ion-item>  
+
             <ion-item>
                 <ion-label color="primary" floating>Kontak</ion-label>
                 <ion-input type="text" [(ngModel)]="kontak"></ion-input>
@@ -31,17 +40,27 @@
 
         <ion-item>
            <ion-label color="primary" floating>Alamat Toko</ion-label>
-          <ion-input type="text" [(ngModel)]="alamattoko"></ion-input>
+          <ion-input type="text" [(ngModel)]="alamat_toko"></ion-input>
         </ion-item>
 
         <ion-item>
+            <ion-label color="primary" floating>Nama Daerah<p>Pilih: Sapta, Stevia, Bara</p></ion-label>
+            <ion-input type="text" [(ngModel)]="nama_tempat"></ion-input>
+          </ion-item>
+
+        <ion-item>
           <ion-label color="primary" floating>Status</ion-label>
-         <ion-input type="text" [(ngModel)]="status"></ion-input>
+         <ion-input type="text" [(ngModel)]="status_toko"></ion-input>
        </ion-item>
        
        <ion-item >
         <ion-label color="primary" floating >Menu</ion-label>
-       <ion-input id="menu" type="text" [(ngModel)]="menu"></ion-input>
+       <ion-input id="menu" type="text" [(ngModel)]="menu_toko"></ion-input>
+       </ion-item>
+
+       <ion-item>
+          <ion-label color="primary" floating>Password</ion-label>
+         <ion-input type="password" [(ngModel)]="password"></ion-input>
        </ion-item>
        <br>
   

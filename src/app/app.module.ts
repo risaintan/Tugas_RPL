@@ -19,6 +19,10 @@ import { Tempat2Page } from '../pages/tempat2/tempat2';
 import { T1toko1Page } from '../pages/t1toko1/t1toko1';
 import { LoginbeliPage } from '../pages/loginbeli/loginbeli';
 import { LoginjualPage } from '../pages/loginjual/loginjual';
+import { HttpModule, Http } from '@angular/http';
+import { IonicStorageModule } from '@ionic/storage';
+import { Data } from '../provider/data';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +44,10 @@ import { LoginjualPage } from '../pages/loginjual/loginjual';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule,
+    IonicStorageModule.forRoot()
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -63,7 +70,8 @@ import { LoginjualPage } from '../pages/loginjual/loginjual';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Data
   ]
 })
 export class AppModule {}

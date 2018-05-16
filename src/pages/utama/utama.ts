@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, MenuController, LoadingController, AlertController } from 'ionic-angular';
 import { ProfilePage } from '../profile/profile';
 import { Tempat1Page } from '../tempat1/tempat1';
 import { Tempat2Page } from '../tempat2/tempat2';
 import { Tempat3Page } from '../tempat3/tempat3';
+import { Data } from '../../provider/data';
+import { Http } from '@angular/http';
 
-/**
- * Generated class for the UtamaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
+
 
  
 @Component({
@@ -19,7 +17,14 @@ import { Tempat3Page } from '../tempat3/tempat3';
 })
 export class UtamaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams,
+    private data : Data,
+    public loadCtrl: LoadingController,
+    public alertCtrl: AlertController,
+    public http: Http) {
+
   }
 
   onLoadprofilePage(){
