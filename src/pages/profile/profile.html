@@ -6,53 +6,83 @@
 -->
 <ion-header>
 
-  <ion-navbar text-center>
-    <h1>Profile</h1>
+  <ion-navbar>
+    <img padding center left src="../assets/imgs/pic.jpg" style="text-align: center" height="150vw" width="150vw"> 
+    <h1>Risa Intan Komaraasih</h1>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding center text-center class="background">
-    <img padding align="center" src="../assets/imgs/pic.jpg" style="text-align: center" height="150vw" width="150vw"> 
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary" floating>Nama Lengkap</ion-label>
+              <ion-input type="text" [(ngModel)]="nama"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label color="primary" floating>E-Mail Adress</ion-label>
+                <ion-input type="text" [(ngModel)]="email"></ion-input>
+              </ion-item>
+
+        <ion-item>
+          <ion-label color="primary" floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+           <ion-label color="primary" floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary" floating>No Telepon</ion-label>
+         <ion-input type="text" [(ngModel)]="telepon"></ion-input>
+       </ion-item><br>
+  
+      </ion-list>
+    </ion-card-content>
+    </ion-card>
+
     <div padding>
-        <ion-segment [(ngModel)]="option">
-          <ion-segment-button value="favorite">
-            Favorites
-          </ion-segment-button>
-        </ion-segment>
-      </div>
+      <ion-segment [(ngModel)]="option">
+        <ion-segment-button value="favorite">
+          Favorites
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    
+    <div [ngSwitch]="option">
+      <ion-list *ngSwitchCase="'favorite'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="/assets/imgs/soto.jpg">
+          </ion-thumbnail>
+          <h2>Soto Ayam</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="/assets/imgs/banana.jpg">
+          </ion-thumbnail>
+          <h2>Banana Milk</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="/assets/imgs/ayam.jpg">
+          </ion-thumbnail>
+          <h2>Ayam Geprek</h2>
+        </ion-item>
+      </ion-list>
+    
       
-      <div [ngSwitch]="option">
-        <ion-list *ngSwitchCase="'favorite'">
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="/assets/imgs/soto.jpg">
-            </ion-thumbnail>
-            <h2>Soto Ayam</h2>
-          </ion-item>
+    </div>
+    
 
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="/assets/imgs/banana.jpg">
-            </ion-thumbnail>
-            <h2>Banana Milk</h2>
-          </ion-item>
-
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="/assets/imgs/ayam.jpg">
-            </ion-thumbnail>
-            <h2>Ayam Geprek</h2>
-          </ion-item>
-        </ion-list>
-      
-        
-      </div>
-      
-
-    <ion-fab right bottom>
-      <button ion-fab><ion-icon name="add"></ion-icon></button>
-    </ion-fab>
-
+  <ion-fab right bottom>
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 </ion-content>
