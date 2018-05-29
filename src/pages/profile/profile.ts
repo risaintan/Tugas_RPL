@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
 import { NavController, NavParams, MenuController, LoadingController, AlertController } from 'ionic-angular';
+import { EditprofPage } from '../editprof/editprof';
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html',
@@ -31,5 +32,7 @@ export class ProfilePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
   }
-
+  onLoadProfilPage(){
+    this.navCtrl.push(EditprofPage);
+  }
 }

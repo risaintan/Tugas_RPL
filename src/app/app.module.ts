@@ -22,6 +22,7 @@ import { LoginjualPage } from '../pages/loginjual/loginjual';
 import { HttpModule, Http } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 import { Data } from '../provider/data';
+import { EditprofPage } from '../pages/editprof/editprof';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { Data } from '../provider/data';
     Tempat3Page,
     T1toko1Page,
     LoginbeliPage,
-    LoginjualPage
+    LoginjualPage,
+    EditprofPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import { Data } from '../provider/data';
     Tempat3Page,
     T1toko1Page,
     LoginbeliPage,
-    LoginjualPage
+    LoginjualPage,
+    EditprofPage
   ],
   providers: [
     StatusBar,
