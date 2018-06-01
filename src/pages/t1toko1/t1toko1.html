@@ -18,9 +18,16 @@
 
 
 <ion-content padding>
-     <img src="../assets/imgs/sapta.jpg" style="text-align: center" > 
+     <img src="../assets/imgs/sapta.jpeg" style="text-align: center" > 
      
-                  
+     <ion-list padding>
+      <ion-item>
+        Sapta
+      </ion-item>
+      <ion-item>
+        10:00-15:00
+      </ion-item>
+    </ion-list>         
      
 
      <div padding>
@@ -50,10 +57,11 @@
           
         </ion-list>
       </div>
- 
+      
       <div [ngSwitch]="pilihan">
           <ion-list *ngSwitchCase="'ulasan'">
-          
+                      
+            
             <ion-item>
                 <ion-thumbnail item-start>
                     <button ion-button icon-only>
@@ -62,9 +70,17 @@
                 </ion-thumbnail>
                         <ion-label color="primary" floating>Ulas di sini ....</ion-label>
                         <ion-input type="text" [(ngModel)]="ulas"></ion-input>
-                        <button ion-button full round (click)="onLoadutamaPage()" >INPUT</button>
+                        
             </ion-item>
-              
+            <ion-item>
+                <ion-label color="primary" floating>Yuk, beri rating!
+                <p><i>Range</i> antara 1-5 bintang.</p>
+              </ion-label>
+                <ion-input type="text" [(ngModel)]="rating"></ion-input>
+                
+            </ion-item>
+            <button ion-button round small (click)="onLoadutamaPage()" >INPUT</button>
+            
             <ion-item>
                 <ion-thumbnail item-start>
                     <img src="/assets/imgs/bangka.jpg">
